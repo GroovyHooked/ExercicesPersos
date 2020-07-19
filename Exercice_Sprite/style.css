@@ -1,0 +1,24 @@
+.sprite {
+  background-image: url(sprite.png);
+  background-size: 400% 100%;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px;
+  max-width: 100%;
+}
+
+.sprite--cat {
+  background-position: 0 0;
+}
+
+.sprite--frog {
+  background-position: 33.333% 0;
+}
+
+.sprite--lion {
+  background-position: 66.666% 0;
+}
+
+.sprite--mouse {
+  background-position: 100% 0;
+}

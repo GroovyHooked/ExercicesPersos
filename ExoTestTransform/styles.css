@@ -1,0 +1,45 @@
+.d1, .d2, .d3{
+  width: 200px;
+  margin: 50px auto;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 50px;
+  background-color: lightgrey;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  border: 10px solid lightgrey;
+  border-radius: 50px;
+  transition-property: transform border border-radius;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+.d1 {
+  transition: background-color color border;
+  transition-duration:1s;
+}
+
+div.d1:hover{
+  background-color: white;
+  color: blue;
+  border: 1px dashed blue;
+}
+
+.d2 {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in; /* Transition de type ease in*/
+}
+
+.d2:hover{
+  transform: translateY(1000px);
+}
+img:hover{
+  transform: rotate(360deg);
+  border: 100px solid black;
+  border-radius: 200px;
+}

@@ -1,0 +1,30 @@
+/* Créez votre test CSS ici */
+
+p {
+  color: red;
+}
+.box {
+  padding: 20px;
+}
+.box h2 {
+  font-size: 32px;
+  color: #333;
+  border: 10px solid black;
+}
+.box p:first-child {
+  font-size: 16px;
+  line-height: 20px;
+  color: #999;
+}
+ a:link {
+   color: green;
+ }
+body {
+  width: max-content@@@@@@@@@@@@@@@@@@@@@@;
+  margin: auto;
+  background-color: grey;
+}
+h1, h3 {
+  font-size: 32px;
+  color: blue;
+}
