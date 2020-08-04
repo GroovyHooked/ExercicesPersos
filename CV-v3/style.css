@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #355070;
+}
+header{
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.trait{
+    position: relative;
+    top: 7px;
+    width: 2em;
+    height: 0.2em;
+    background-color: white;
+}
+.trait:after{
+    content: "";
+    position: absolute;
+    top: 15px;;
+    width: 2em;
+    height: 0.2em;
+    background-color: white;
+}
+.reseau img{ 
+    width: 3em;
+}
+span.carre{
+    display: inline-block;
+    position: relative;
+    width: 2.1em;
+    height: 2.1em;
+    left: -46px;
+    bottom: 5px;
+    background-color: transparent;
+    border: 2px solid black;
+}
+span.carre:before{
+    content: "";
+    position: absolute;
+    left: -107px;
+    bottom: 0px;
+    width: 2.1em;
+    height: 2.1em;
+    background-color: transparent;
+    border: 2px solid black;
+}
+span.carre:after{
+    content: "";
+    position: absolute;
+    left: -55px;
+    bottom: 0px;
+    width: 2.1em;
+    height: 2.1em;
+    background-color: transparent;
+    border: 2px solid black;
+}
+section.prez{
+    padding: 0 25px;
+    height: 1000px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.prez > p:nth-child(3){
+    margin: 0 10px;
+}
+section.prez h3{
+    font-size: 1.5em;;
+}
+section.prez h3 strong{
+    color: #E56B6F;
+    font-size: 1.2em;;
+}
+
+.bouton{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    border-radius: 3px;
+}
+nav{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
