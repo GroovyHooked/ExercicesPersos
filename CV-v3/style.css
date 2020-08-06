@@ -101,7 +101,9 @@ span.ss-trait:after{
     opacity: 0;
 }  
 /* ------ ------- -------*/
-
+:focus{
+    outline: 3px solid red;
+}
 /* ---- Navigation --------*/
 nav{
     position: absolute;
@@ -110,7 +112,7 @@ nav{
     border-radius: 8px;
     top: 55px;
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     height: 0vh;
     overflow: hidden;
     transition: all 0.5s ease;
@@ -130,6 +132,12 @@ nav ul li{
     height: 20vh;
     
 }
+.burger:target ~ nav{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    
+}
 header h2 div.burger:active ~ .prez{
     position: absolute;
     height: 400px;
@@ -140,7 +148,6 @@ header h2 div.burger:active ~ .prez{
 
 /* ------ Présentation -------*/
 section.prez{
-    margin-top: 20px;;
     box-sizing: border-box;
     padding: 10px 35px;
     height: 600px;
@@ -153,8 +160,390 @@ section.prez{
     align-self: center;
 }
 .prez-text {
-    height: 50%;
+    height: 30%;
+    overflow: scroll;
+    background-color: #414562;
+    padding: 0 5px;
 }
+/*  -----------------------  EFFET SUR TITRES H3 ------------------------------ */
+.TITRE{
+    width: 100%;
+}
+.titre span {
+    opacity: 0;
+    margin-right: -8px;  /* supprime l'espacement entre les lettres span mise à la ligne dans le html */
+}
+  /*      PASSION          */
+  .pp{
+    animation: p1 0.3s linear 1;
+     animation-fill-mode: forwards; /*      P          */
+  }
+  @keyframes p1 {      /*      P         */
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1; animation-play-state: paused;}
+  }
+  
+  .pa{
+    animation: p2 0.3s linear 1;     /*      A          */
+    animation-delay: 0.15s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes p2 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1; animation-play-state: paused;}
+  }
+  .ps-1{
+    animation: p3 0.3s linear 1;      /*      S         */
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes p3 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .ps-2{
+     animation: p4 0.3s linear 1;     /*      S         */
+     animation-delay: 0.45s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes p4 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .pi{
+     animation: p5 0.3s linear 1;      /*      I         */
+     animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes p5 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .po{
+     animation: p6 0.75s linear 1;        /*      O         */
+     animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes p6 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .pn{ 
+     animation: p7 0.9s linear 1;     /*      N         */
+     animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes p7 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+            /*      -------------          */
+  
+          /*      DETERMINATION          */
+  .dd{
+    animation: d1 0.3s linear 1;          /*      D         */
+    animation-delay: 1.05s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d1 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .de-1{
+    animation: d2 0.3s linear 1;            /*      E         */
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d2 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .dt-1{
+    animation: d3 0.3s linear 1;          /*      T         */
+    animation-delay: 1.35s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d3 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .de-2{
+    animation: d4 0.3s linear 1;           /*      E         */
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d4 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .dr{
+    animation: d5 0.3s linear 1;       /*      R         */
+    animation-delay: 1.65s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d5 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .dm{
+    animation: d6 0.3s linear 1;        /*      M         */
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d6 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .di-1{
+    animation: d7 0.3s linear 1;      /*      I         */
+    animation-delay: 1.95s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d7 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .dn-1{
+    animation: d8 0.3s linear 1;       /*      N         */
+    animation-delay: 2.1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d8 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .da{
+    animation: d9 0.3s linear 1;          /*      A         */
+    animation-delay: 2.25s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d9 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .dt-2{
+    animation: d10 0.3s linear 1;           /*      T         */
+    animation-delay: 2.4s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d10 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .di-2{
+    animation: d11 0.3s linear 1;          /*      I         */
+    animation-delay: 2.55s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d11 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .do{
+    animation: d12 0.3s linear 1;            /*      O         */
+    animation-delay: 2.7s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d12 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .dn-2{
+    animation: d13 0.3s linear 1;         /*      N         */
+    animation-delay: 2.85s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d13 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+           /*      -------------          */
+  
+           /*      ADAPTATION          */
+  
+  .aa-1{
+    animation: d14 0.3s linear 1;         /*      A         */
+    animation-delay: 2.85s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d14 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  
+  .ad{
+    animation: d15 0.3s linear 1;         /*      D         */
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d15 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .aa-2{
+    animation: d16 0.3s linear 1;         /*      A         */
+    animation-delay: 3.15s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d16 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .ap{
+    animation: d17 .3s linear 1;         /*      P         */
+    animation-delay: 3.3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d17 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .at-1{
+    animation: d18 .3s linear 1;         /*      T         */
+    animation-delay: 3.45s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d18 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .aa-3{
+    animation: d19 .3s linear 1;         /*      A         */
+    animation-delay: 3.6s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d19 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  
+  .at-2{
+    animation: d20 .3s linear 1;         /*      T         */
+    animation-delay: 3.75s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d20 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .ai{
+    animation: d21 .3s linear 1;         /*      I         */
+    animation-delay: 3.9s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d21 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .ao{
+    animation: d22 .3s linear 1;         /*      O         */
+    animation-delay: 4.05s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d22 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+  .an{
+    animation: d23 0.3s linear 1;         /*      N         */
+    animation-delay: 4.2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes d23 {
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.9;}
+    100%{opacity: 1;}
+  }
+/*  ----------------------- ------------ ------------------------------ */
 .prez > p:nth-child(2){
     width: 95%;
 }
@@ -189,40 +578,42 @@ section.prez h3{
 
 /* ---- réseaux --------*/
 .reseau{
-    width: 150px;;
+    position: relative;
+    width: 160px;;
     display: flex;
     justify-content: space-between;
+    margin-left: -5px;
 }
 .reseau img{ 
-    width: 3em;
+    width: 3.4em;
 }
-span.carre{
-    display: inline-block;
-    position: relative;
-    width: 2.1em;
-    height: 2.1em;
-    left: 105px;
-    bottom: -8px;
+.reseau > a:nth-child(1):before{
+    content: "";
+    position: absolute;
+    width: 2.6em;
+    height: 2.6em;
+    left: 113px;
+    bottom: 11px;
     background-color: transparent;
     border: 2px solid var(--couleur3);
 }
-span.carre:before{
+.reseau > a:nth-child(2):before{
     content: "";
     position: absolute;
-    left: -107px;
-    bottom: 0px;
-    width: 2.1em;
-    height: 2.1em;
+    left: 58px;
+    bottom: 11px;
+    width: 2.6em;
+    height: 2.6em;
     background-color: transparent;
     border: 2px solid var(--couleur3);
 }
-span.carre:after{
+.reseau > a:nth-child(3):before{
     content: "";
     position: absolute;
-    left: -55px;
-    bottom: 0px;
-    width: 2.1em;
-    height: 2.1em;
+    left: 5px;
+    bottom: 11px;
+    width: 2.6em;
+    height: 2.6em;
     background-color: transparent;
     border: 2px solid var(--couleur3);
 }
