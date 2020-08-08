@@ -375,7 +375,7 @@ section.prez h3{
   border-radius: 3px;
   background-color: rgb(61, 64, 91, 0.7);
   z-index: -1;
-  transition: transform 0.25s ease-in;
+  transition: transform 0.15s ease-in;
   transform: scaleX(0);
   transform-origin: right;
 }
@@ -388,7 +388,7 @@ section.prez h3{
     color: var(--background);
     font-size: 1.05em;
     font-weight: 900;
-    transition: color 0.25s ease-in;
+    transition: color 0.15s ease-in;
 }
 .bouton:hover p a{
   color: var(--couleur3);
@@ -440,28 +440,80 @@ section.prez h3{
 /* ---- -------- --------*/
 
 @media screen and (min-width: 750px){
-
+  header{
+    display: grid;
+    height: 100px;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+  }
+  h2{
+    grid-column: 3/10;
+    grid-row: 2/2;
+  }
   section.prez{
     display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
   }
   .TITRE{
-    grid-row: 2/3;
-    grid-column: 2/6;
+    grid-row: 6/15;
+    grid-column: 3/10;
+  }
+  .burger{
+    grid-column: 12/12;
+    margin-top: 0px;
+    grid-row: 2/2;
   }
   .prez-text{
+    position: relative;
     grid-row: 2/5;
-    grid-column: 6/11;
+    grid-column: 11/20;
+    width: 85%;
     overflow: visible;
     background-color: var(--background);
   }
   .bouton{
-    grid-row: 9/9;
-    grid-column: 2/4;
+    grid-row: 17/19;
+    grid-column: 3/10;
   }
   .reseau{
-    grid-row: 9/9;
-    grid-column: 6/10;
+    grid-row: 17/19;
+    grid-column: 11/20;
   }
+  .prez-text:before{
+    content: "";
+    position: absolute;
+    left: -10px;
+    width: 2px;
+    height: 750%;
+    background-color: var(--couleur3);
+  }
+  nav{
+    grid-column: 8/12;
+  }
+  nav{
+    display: block;
+    background-color: var(--couleur3);
+    border-radius: 8px;
+    right: -400px;
+    top: 0px;
+    width: 200%;
+    margin: 0 auto;
+    height: 0px;
+    overflow: hidden;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.5s ease;
+}
+nav ul li{
+    list-style-type: none;
+    text-align: center;
+}
+.burger:active ~ nav{
+    margin-top: 10px;
+    margin-right: 20px;;
+    position: absolute;
+    transform: scaleX(1);
+}
 }
